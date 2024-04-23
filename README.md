@@ -52,13 +52,13 @@ The README explaining each and every line of this Dockerfile is labelled as Dock
 
 Basically, the following steps are taking place during the creation of the Server Docker Image:
 
-> A base image of alpine node image is being used
-/usr/src/app is being set as working directory
-> COPY command being used to copy the package.json and package-lock.json files to the working directory
-> npm install being done to install dependencies
-> Now, directory contents are being copied to the image
-> Port 6000 is being exposed
-> "node index.js" command being executed using the docker CMD command
+> A base image of alpine node image is being used.
+> /usr/src/app is being set as working directory.
+> COPY command being used to copy the package.json and package-lock.json files to the working directory.
+> npm install being done to install dependencies.
+> Now, directory contents are being copied to the image.
+> Port 6000 is being exposed.
+> "node index.js" command being executed using the docker CMD command.
 
 
 ## Pulling the Docker Image for MongoDB
@@ -170,9 +170,7 @@ Link to the Docker Hub Repository: https://hub.docker.com/repository/docker/abhi
 
 ## Conclusion
 
-Docker simplifies the development, deployment, and management of applications based on the three-tier architecture. 
-
-In this tutorial, we have convered the the deployment of a three-tier application using docker containers. 
-
+In this tutorial, we have covered the the deployment of a three-tier web application using docker containers. Though this is just a 
+simple demonstration, the concepts can be utilised for building web applications with complex architectures as well.
 
 ## Thank You for Reading!
