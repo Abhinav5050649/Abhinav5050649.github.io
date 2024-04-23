@@ -5,6 +5,7 @@
         color: white;
     }
 </style>
+```
 
 # Welcome to the tutorial
 
@@ -80,13 +81,13 @@ Now that the image is present, we can start building the image for the client an
 
 ## Client Image Building
 
-Navigate to the client directory and type "docker build -t <image_name> .". I have created an image named "21bcp134_client_ia2". You are free to use any name that you like. 
+Navigate to the client directory and type "docker build -t {image_name} ." I have created an image named "21bcp134_client_ia2". You are free to use any name that you like. 
 
 ![Creating Client Docker Image](./images/Pic_7.png)
 
 ## Server Image Building
 
-Now, navigate to the server directory and type "docker build -t <image_name> .". I have created an image named "21bcp134_server_ia2". You are free to use any name that you like. 
+Now, navigate to the server directory and type "docker build -t {image_name} ." I have created an image named "21bcp134_server_ia2". You are free to use any name that you like. 
 
 ![Creating Server Docker Image](./images/Pic_8.png)
 
@@ -98,7 +99,7 @@ Type "docker image ls" in terminal
 
 ## Starting the containers
 
-To run containers, type "docker run -dp {port}:{port} <image_name>"
+To run containers, type "docker run -dp {port}:{port} {image_name}"
 
 Use "docker ps" to see all active containers
 
@@ -124,7 +125,7 @@ First type "docker ps" in terminal.
 
 Now, to stop the containers, we can either use the container ids, or the container names. I will be using the container names.
 
-Type "docker stop <container_name_1> <container_name_2> ..."
+Type "docker stop {container_name_1} {container_name_2} ..."
 
 This will stop the active containers.
 
@@ -138,4 +139,4 @@ As we can just pull the mongo image and run it, we will be pushing only the clie
 
 For this purpose, we must tag the images with the help of the following command: 
 
-"docker tag <your_image_name>:<image_tag> <your_docker> 
+"docker tag {your_image_name}:{image_tag} {your_docker_username}/{docker_hub_repo_name}:{tag}"
