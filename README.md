@@ -105,8 +105,8 @@ To run containers, type "docker run -dp {port}:{port} {image_name}"
 Use "docker ps" to see all active containers
 
 Here,
-> -d flag runs the containers in detached mode, i.e., lets' you use the terminal even if the container is running
-> -p flag maps the port of the host system to that of the docker container
+> -d flag runs the containers in detached mode, i.e., lets' you use the terminal even if the container is running.
+> -p flag maps the port of the host system to that of the docker container.
 
 Based on this, start the containers for the client, server and the mongo database.
 
@@ -115,7 +115,7 @@ Based on this, start the containers for the client, server and the mongo databas
 ![Creating client and Server Containers](./images/Pic_12.png)
 
 
-## To check if project is working
+## To check if the project is working
 
 Open up localhost:3000 on your browser to check things out:
 
