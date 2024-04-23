@@ -171,9 +171,11 @@ Click on the Repo to see the images which you pushed.
 
 Link to the Docker Hub Repository: https://hub.docker.com/repository/docker/abhinav2911/cloud_ia2/general
 
+
 ## Conclusion
 
 In this tutorial, we have covered the the deployment of a three-tier web application using docker containers. Though this is just a 
 simple demonstration, the concepts can be utilised for building web applications with complex architectures as well.
+
 
 ## Thank You for Reading!
