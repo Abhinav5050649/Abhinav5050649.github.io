@@ -16,6 +16,8 @@ The Structure of the Project is as follows:
 ![Project Structure](./images/Pic_0.png)
 
 In the server directory, create a .env file with the MONGO_DB URL named as "DB".
+Syntax: 
+DB = "your_mongo_url"
 
 
 ## Dockerfile Creation
