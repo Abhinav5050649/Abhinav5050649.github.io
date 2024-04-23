@@ -1,3 +1,11 @@
+```html
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+</style>
+
 # Welcome to the tutorial
 
 In this tutorial, we will learn how to deploy a three-tier web application using Docker. Let's start!
@@ -11,6 +19,7 @@ Link: https://github.com/Abhinav5050649/DiaryApp
 First, clone into this repo and open it in the code editor of your choice. I will be using VS Code.
 
 The Structure of the Project is as follows:
+
 ![Project Structure](./images/Pic_0.png)
 
 ## Dockerfile Creation
@@ -20,9 +29,11 @@ You may notice that the Dockerfiles have already been created. But, for the sake
 ### Client Side
 
 The Dockerfile for the Client Side is as follows: 
+
 ![Client Dockerfile](./images/Pic_1_2.png)
 
 The README explaining each and every line of this Dockerfile is labelled as Docker.md in the client directory. It is as follows:
+
 ![Client Dockerfile Explanation](./images/Pic_2_1.png)
 
 Basically, the following steps are taking place during the creation of the Client Docker Image:
@@ -37,9 +48,11 @@ Basically, the following steps are taking place during the creation of the Clien
 ### Server Side
 
 The Dockerfile for the Client Side is as follows: 
+
 ![Server Dockerfile](./images/Pic_3_1.png)
 
 The README explaining each and every line of this Dockerfile is labelled as Docker.md in the client directory. It is as follows:
+
 ![Server Dockerfile Explanation](./images/Pic_4_1.png)
 
 Basically, the following steps are taking place during the creation of the Server Docker Image:
@@ -56,9 +69,11 @@ Basically, the following steps are taking place during the creation of the Serve
 ## Pulling the Docker Image for MongoDB
 
 Open the terminal and type "docker pull mongo" as shown below:
+
 ![Fetching MongoDB Image](./images/Pic_5.png)
 
 Let us check and verify if the image has been successfully pulled or not. For this, type "docker image ls" as shown below in the terminal:
+
 ![Checking MongoDB Image](./images/Pic_6.png)
 
 Now that the image is present, we can start building the image for the client and server.
@@ -99,9 +114,28 @@ Based on this, start the containers for the client, server and the mongo databas
 
 ## To check if project is working
 
-Open up localhost:3000 on your browser to check things out
+Open up localhost:3000 on your browser to check things out:
 
 ![Checking functionality](./images/Pic_13.png)
 
 ## Stopping the containers
 
+First type "docker ps" in terminal. 
+
+Now, to stop the containers, we can either use the container ids, or the container names. I will be using the container names.
+
+Type "docker stop <container_name_1> <container_name_2> ..."
+
+This will stop the active containers.
+
+To verify, type "docker ps" again.
+
+![Stopping](./images/Pic_14.png)
+
+## Pushing Images to Docker Hub
+
+As we can just pull the mongo image and run it, we will be pushing only the client and server images to our docker hub repo.
+
+For this purpose, we must tag the images with the help of the following command: 
+
+"docker tag <your_image_name>:<image_tag> <your_docker> 
