@@ -1,6 +1,7 @@
-# Welcome to the tutorial
+# Welcome to the Tutorial
 
 In this tutorial, we will learn how to deploy a three-tier web application using Docker Containers. Let's start!
+
 
 ## Project under Consideration
 
@@ -13,6 +14,8 @@ First, clone into this repo and open it in the code editor of your choice. I wil
 The Structure of the Project is as follows:
 
 ![Project Structure](./images/Pic_0.png)
+
+In the server directory, create a .env file with the MONGO_DB URL named as "DB".
 
 
 ## Dockerfile Creation
